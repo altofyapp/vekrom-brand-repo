@@ -1,36 +1,16 @@
 {
-  "version": 2,
-  "name": "vekrom-brand",
-  "builds": [
+  "rewrites": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
+      "source": "/embed",
+      "destination": "/embed.html"
     },
     {
-      "src": "assets/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
+      "source": "/docs",
+      "destination": "/docs.html"
     },
     {
-      "src": "/embed",
-      "dest": "/embed.html"
-    },
-    {
-      "src": "/docs",
-      "dest": "/docs.html"
-    },
-    {
-      "src": "/quick-guide",
-      "dest": "/quick-guide.html"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/quick-guide",
+      "destination": "/quick-guide.html"
     }
   ],
   "headers": [
