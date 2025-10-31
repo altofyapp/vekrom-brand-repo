@@ -1,0 +1,23 @@
+{
+  "name": "vekrom-brand",
+  "version": "1.0.0",
+  "description": "Vekrom Brand Identity - Hub de Growth para Empresas Brasileiras",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "brand",
+    "identity",
+    "logo",
+    "vekrom",
+    "design"
+  ],
+  "author": "Vekrom",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

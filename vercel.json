@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "name": "vekrom-brand",
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/embed",
+      "dest": "/embed.html"
+    },
+    {
+      "src": "/docs",
+      "dest": "/docs.html"
+    },
+    {
+      "src": "/quick-guide",
+      "dest": "/quick-guide.html"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vekrom - Guia Rápido de Variações</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #0a0a0a;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .variant-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .variant-preview {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .variant-preview.dark {
+            background: #0a0a0a;
+        }
+        
+        .variant-preview img {
+            width: 120px;
+            height: 120px;
+        }
+        
+        .variant-info {
+            padding: 20px;
+        }
+        
+        .variant-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #0a0a0a;
+        }
+        
+        .variant-use {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        
+        .variant-colors {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .color-dot {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .variant-file {
+            font-family: 'Monaco', monospace;
+            font-size: 0.8rem;
+            color: #3B81F5;
+            background: #f5f5f5;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        
+        .context-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .context-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #0a0a0a;
+        }
+        
+        .context-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .context-item {
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #3B81F5;
+        }
+        
+        .context-item h4 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #0a0a0a;
+        }
+        
+        .context-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .quick-guide {
+            background: linear-gradient(135deg, #3B81F5 0%, #2348B2 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .quick-guide h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        
+        .quick-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .quick-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .quick-item strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .quick-item small {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .comparison-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VEKROM - Guia Rápido</h1>
+        <p class="subtitle">Escolha a variação certa para cada contexto</p>
+        
+        <!-- Grid de Comparação -->
+        <div class="comparison-grid">
+            <!-- Azul Gradiente -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-blue-gradient.svg" alt="Azul Gradiente">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">⭐ Azul Gradiente</div>
+                    <div class="variant-use">Versão PRINCIPAL. Use em 80% dos casos.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: linear-gradient(135deg, #3B81F5, #2348B2);"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-blue-gradient.svg</div>
+                </div>
+            </div>
+            
+            <!-- Verde Gradiente -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-green-gradient.svg" alt="Verde Gradiente">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">📈 Verde Growth</div>
+                    <div class="variant-use">Para métricas de crescimento e sucesso.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: linear-gradient(135deg, #00F0A8, #00A669);"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-green-gradient.svg</div>
+                </div>
+            </div>
+            
+            <!-- Roxo Gradiente -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-purple-gradient.svg" alt="Roxo Premium">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">👑 Roxo Premium</div>
+                    <div class="variant-use">Campanhas especiais e features exclusivas.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: linear-gradient(135deg, #9D6CFF, #5B21B6);"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-purple-gradient.svg</div>
+                </div>
+            </div>
+            
+            <!-- Laranja Gradiente -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-orange-gradient.svg" alt="Laranja Energia">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">🔥 Laranja Energia</div>
+                    <div class="variant-use">CTAs urgentes e eventos limitados.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: linear-gradient(135deg, #FF6B35, #D84315);"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-orange-gradient.svg</div>
+                </div>
+            </div>
+            
+            <!-- Ciano Gradiente -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-cyan-gradient.svg" alt="Ciano Tech">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">💎 Ciano Tech</div>
+                    <div class="variant-use">Features tech e inovação digital.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: linear-gradient(135deg, #00E5FF, #0097A7);"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-cyan-gradient.svg</div>
+                </div>
+            </div>
+            
+            <!-- Azul Sólido -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-blue-solid.svg" alt="Azul Sólido">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">🔵 Azul Sólido</div>
+                    <div class="variant-use">Quando gradiente não for suportado.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: #2563EB;"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-blue-solid.svg</div>
+                </div>
+            </div>
+            
+            <!-- Verde Sólido -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-green-solid.svg" alt="Verde Sólido">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">🟢 Verde Sólido</div>
+                    <div class="variant-use">Alternativa sólida para growth.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: #00D084;"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-green-solid.svg</div>
+                </div>
+            </div>
+            
+            <!-- Preto -->
+            <div class="variant-card">
+                <div class="variant-preview">
+                    <img src="assets/vekrom-final-black.svg" alt="Preto">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">⚫ Preto</div>
+                    <div class="variant-use">Corporativo formal, impressão monocromática.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: #0A0A0A;"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-black.svg</div>
+                </div>
+            </div>
+            
+            <!-- Branco -->
+            <div class="variant-card">
+                <div class="variant-preview dark">
+                    <img src="assets/vekrom-final-white.svg" alt="Branco">
+                </div>
+                <div class="variant-info">
+                    <div class="variant-name">⚪ Branco</div>
+                    <div class="variant-use">Fundos escuros, dark mode, app icons.</div>
+                    <div class="variant-colors">
+                        <div class="color-dot" style="background: #FFFFFF; border-color: #ccc;"></div>
+                    </div>
+                    <div class="variant-file">vekrom-final-white.svg</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Guia por Contexto -->
+        <div class="context-section">
+            <div class="context-title">📱 Digital - Web & Apps</div>
+            <div class="context-grid">
+                <div class="context-item">
+                    <h4>Website Header</h4>
+                    <p>Use: Azul Gradiente ou Azul Sólido<br>Tamanho: 40-48px altura</p>
+                </div>
+                <div class="context-item">
+                    <h4>Favicon</h4>
+                    <p>Use: Preto ou Azul Sólido<br>Tamanho: 16px, 32px, 48px</p>
+                </div>
+                <div class="context-item">
+                    <h4>App Icon</h4>
+                    <p>Use: Branco sobre fundo azul gradiente<br>Tamanho: 120px, 180px</p>
+                </div>
+                <div class="context-item">
+                    <h4>Email Signature</h4>
+                    <p>Use: Azul Gradiente<br>Tamanho: 48-64px altura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="context-section">
+            <div class="context-title">📸 Redes Sociais</div>
+            <div class="context-grid">
+                <div class="context-item">
+                    <h4>Avatar/Perfil</h4>
+                    <p>Use: Azul Gradiente com círculo de fundo branco<br>Tamanho: 256px, 512px</p>
+                </div>
+                <div class="context-item">
+                    <h4>Posts sobre Growth</h4>
+                    <p>Use: Verde Gradiente<br>Formato: Quadrado ou 4:5</p>
+                </div>
+                <div class="context-item">
+                    <h4>Posts Premium</h4>
+                    <p>Use: Roxo Gradiente<br>Formato: Story ou Feed</p>
+                </div>
+                <div class="context-item">
+                    <h4>Stories sobre Eventos</h4>
+                    <p>Use: Laranja Gradiente ou Branco sobre gradiente colorido<br>Formato: 9:16</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="context-section">
+            <div class="context-title">🖨️ Impressão</div>
+            <div class="context-grid">
+                <div class="context-item">
+                    <h4>Cartão de Visita</h4>
+                    <p>Use: Branco sobre fundo escuro OU Preto sobre fundo claro<br>Tamanho: 20-25mm</p>
+                </div>
+                <div class="context-item">
+                    <h4>Papel Timbrado</h4>
+                    <p>Use: Azul Sólido ou Preto<br>Tamanho: 25-30mm</p>
+                </div>
+                <div class="context-item">
+                    <h4>Banner/Outdoor</h4>
+                    <p>Use: Versão de alto contraste (Branco ou Preto)<br>Tamanho: Mínimo 150mm</p>
+                </div>
+                <div class="context-item">
+                    <h4>Folhetos/Flyers</h4>
+                    <p>Use: Azul Gradiente ou Verde Gradiente<br>Qualidade: Alta resolução</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Guia Rápido -->
+        <div class="quick-guide">
+            <h2>🎯 Regra Rápida: Quando Usar Cada Cor</h2>
+            <div class="quick-grid">
+                <div class="quick-item">
+                    <strong>AZUL 🔵</strong>
+                    <small>80% dos usos<br>Padrão corporativo</small>
+                </div>
+                <div class="quick-item">
+                    <strong>VERDE 🟢</strong>
+                    <small>Crescimento<br>Métricas positivas</small>
+                </div>
+                <div class="quick-item">
+                    <strong>ROXO 🟣</strong>
+                    <small>Premium<br>Exclusividade</small>
+                </div>
+                <div class="quick-item">
+                    <strong>LARANJA 🟠</strong>
+                    <small>Urgência<br>CTAs importantes</small>
+                </div>
+                <div class="quick-item">
+                    <strong>CIANO 🔷</strong>
+                    <small>Tech/Beta<br>Novidades</small>
+                </div>
+                <div class="quick-item">
+                    <strong>PRETO ⚫</strong>
+                    <small>Formal<br>Elegante</small>
+                </div>
+                <div class="quick-item">
+                    <strong>BRANCO ⚪</strong>
+                    <small>Fundos escuros<br>Dark mode</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

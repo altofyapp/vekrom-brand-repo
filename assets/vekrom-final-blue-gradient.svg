@@ -1,0 +1,35 @@
+<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2221_72)">
+<path d="M144 0H0V144H144V0Z" fill="white"/>
+<path d="M11 21L58.3529 122.471" stroke="url(#paint0_linear_2221_72)" stroke-width="12" stroke-miterlimit="16" stroke-linecap="round"/>
+<path d="M85.4121 21V122.471" stroke="url(#paint1_linear_2221_72)" stroke-width="12" stroke-miterlimit="16" stroke-linecap="round"/>
+<path d="M85.4121 75.1176L126 21" stroke="url(#paint2_linear_2221_72)" stroke-width="12" stroke-miterlimit="16" stroke-linecap="round"/>
+<path d="M85.4121 75.1172L126 122.47" stroke="url(#paint3_linear_2221_72)" stroke-width="12" stroke-miterlimit="16" stroke-linecap="round"/>
+<path d="M58.3535 122.47L85.4123 75.1172" stroke="url(#paint4_linear_2221_72)" stroke-width="12" stroke-miterlimit="16" stroke-linecap="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2221_72" x1="34.6765" y1="21" x2="34.6765" y2="122.471" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B81F5"/>
+<stop offset="1" stop-color="#2348B2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2221_72" x1="85.9121" y1="21" x2="85.9121" y2="122.471" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B81F5"/>
+<stop offset="1" stop-color="#2348B2"/>
+</linearGradient>
+<linearGradient id="paint2_linear_2221_72" x1="105.706" y1="21" x2="105.706" y2="75.1176" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B81F5"/>
+<stop offset="1" stop-color="#2348B2"/>
+</linearGradient>
+<linearGradient id="paint3_linear_2221_72" x1="105.706" y1="75.1172" x2="105.706" y2="122.47" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B81F5"/>
+<stop offset="1" stop-color="#2348B2"/>
+</linearGradient>
+<linearGradient id="paint4_linear_2221_72" x1="71.8829" y1="75.1172" x2="71.8829" y2="122.47" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B81F5"/>
+<stop offset="1" stop-color="#2348B2"/>
+</linearGradient>
+<clipPath id="clip0_2221_72">
+<rect width="144" height="144" fill="white"/>
+</clipPath>
+</defs>
+</svg>
